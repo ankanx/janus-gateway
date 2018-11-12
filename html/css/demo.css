@@ -55,6 +55,29 @@
 	width: 45%;
 }
 
+@media (min-width: 1200px)
+.container {
+    width: 1340px !important;
+}
+
+@media (min-width: 1280px)
+.col-md-6 {
+    width: 100% !important;
+}
+
+.navbar {
+    background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5) !important;
+    background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5) !important;
+    background: grey !important;
+    background-repeat: no-repeat !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0) !important;
+    border-bottom: 1px solid #178acc !important;
+    -webkit-filter: none !important;
+    filter: none !important
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1) !important;
+}
+
 .fa-2 {
 	font-size: 2em !important;
 }
