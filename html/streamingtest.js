@@ -173,7 +173,7 @@ $(document).ready(function() {
 									var addButtons = false;
 									if($('#remotevideo').length === 0) {
 										addButtons = true;
-										$('#stream').append('<video class="rounded centered hide" id="remotevideo" width=1280 height=720 autoplay playsinline/>');
+										$('#stream').append('<video class="rounded centered hide" id="remotevideo" width=80% height=720px autoplay playsinline/>');
 										// Show the stream and hide the spinner when we get a playing event
 										$("#remotevideo").bind("playing", function () {
 											$('#waitingvideo').remove();
@@ -326,7 +326,7 @@ function startStream() {
 	var body = { "request": "watch", id: parseInt(selectedStream) };
 	streaming.send({"message": body});
 	// No remote video yet
-	$('#stream').append('<video class="rounded centered" id="waitingvideo" width=1280 height=720 />');
+	$('#stream').append('<video class="rounded centered" id="waitingvideo" width=80% height=720px />');
 	if(spinner == null) {
 		var target = document.getElementById('stream');
 		spinner = new Spinner({top:100}).spin(target);
